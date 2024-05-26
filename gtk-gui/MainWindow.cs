@@ -3,6 +3,14 @@
 
 public partial class MainWindow
 {
+	private global::Gtk.Table table1;
+
+	private global::Gtk.Button button3;
+
+	private global::Gtk.ComboBoxEntry comboboxentry1;
+
+	private global::Gtk.Entry entry2;
+
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
@@ -10,6 +18,49 @@ public partial class MainWindow
 		this.Name = "MainWindow";
 		this.Title = global::Mono.Unix.Catalog.GetString("Weightconv");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+		// Container child MainWindow.Gtk.Container+ContainerChild
+		this.table1 = new global::Gtk.Table(((uint)(3)), ((uint)(3)), false);
+		this.table1.Name = "table1";
+		this.table1.RowSpacing = ((uint)(6));
+		this.table1.ColumnSpacing = ((uint)(6));
+		// Container child table1.Gtk.Table+TableChild
+		this.button3 = new global::Gtk.Button();
+		this.button3.CanFocus = true;
+		this.button3.Name = "button3";
+		this.button3.UseUnderline = true;
+		this.button3.Label = global::Mono.Unix.Catalog.GetString("Convert");
+		this.table1.Add(this.button3);
+		global::Gtk.Table.TableChild w1 = ((global::Gtk.Table.TableChild)(this.table1[this.button3]));
+		w1.TopAttach = ((uint)(2));
+		w1.BottomAttach = ((uint)(3));
+		w1.LeftAttach = ((uint)(1));
+		w1.RightAttach = ((uint)(2));
+		w1.XOptions = ((global::Gtk.AttachOptions)(4));
+		w1.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table1.Gtk.Table+TableChild
+		this.comboboxentry1 = global::Gtk.ComboBoxEntry.NewText();
+		this.comboboxentry1.Name = "comboboxentry1";
+		this.table1.Add(this.comboboxentry1);
+		global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1[this.comboboxentry1]));
+		w2.TopAttach = ((uint)(1));
+		w2.BottomAttach = ((uint)(2));
+		w2.LeftAttach = ((uint)(1));
+		w2.RightAttach = ((uint)(2));
+		w2.XOptions = ((global::Gtk.AttachOptions)(4));
+		w2.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table1.Gtk.Table+TableChild
+		this.entry2 = new global::Gtk.Entry();
+		this.entry2.CanFocus = true;
+		this.entry2.Name = "entry2";
+		this.entry2.IsEditable = true;
+		this.entry2.InvisibleChar = '●';
+		this.table1.Add(this.entry2);
+		global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table1[this.entry2]));
+		w3.LeftAttach = ((uint)(1));
+		w3.RightAttach = ((uint)(2));
+		w3.XOptions = ((global::Gtk.AttachOptions)(4));
+		w3.YOptions = ((global::Gtk.AttachOptions)(4));
+		this.Add(this.table1);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
