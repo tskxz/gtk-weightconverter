@@ -1,0 +1,6 @@
+/home/tanjil/Projects/Weightconv/Weightconv/bin/Debug/Weightconv.exe
+/home/tanjil/Projects/Weightconv/Weightconv/bin/Debug/Weightconv.pdb
+/home/tanjil/Projects/Weightconv/Weightconv/obj/x86/Debug/Weightconv.csproj.AssemblyReference.cache
+/home/tanjil/Projects/Weightconv/Weightconv/obj/x86/Debug/Weightconv.csproj.CoreCompileInputs.cache
+/home/tanjil/Projects/Weightconv/Weightconv/obj/x86/Debug/Weightconv.exe
+/home/tanjil/Projects/Weightconv/Weightconv/obj/x86/Debug/Weightconv.pdb
