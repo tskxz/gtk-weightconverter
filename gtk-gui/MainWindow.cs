@@ -22,6 +22,7 @@ public partial class MainWindow
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.table1 = new global::Gtk.Table(((uint)(4)), ((uint)(3)), false);
+		this.table1.Name = "table1";
 		this.table1.RowSpacing = ((uint)(6));
 		this.table1.ColumnSpacing = ((uint)(6));
 		// Container child table1.Gtk.Table+TableChild
@@ -87,6 +88,7 @@ public partial class MainWindow
 		this.combobox1.HasDefault = true;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+		this.entry2.TextInserted += new global::Gtk.TextInsertedHandler(this.OnEntry2TextInserted);
 		this.button3.Clicked += new global::System.EventHandler(this.OnButton3Clicked);
 	}
 }

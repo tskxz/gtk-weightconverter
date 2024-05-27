@@ -17,6 +17,11 @@ public partial class MainWindow : Gtk.Window
     // Convert button
     protected void OnButton3Clicked(object sender, EventArgs e)
     {
-        Application.Quit();
+        Console.WriteLine("Clicked button");
+    }
+
+    protected void OnEntry2TextInserted(object o, TextInsertedArgs args)
+    {
+        Console.WriteLine("Text is inserted");
     }
 }

@@ -99,6 +99,7 @@ LBS</property>
             <property name="CanFocus">True</property>
             <property name="IsEditable">True</property>
             <property name="InvisibleChar">●</property>
+            <signal name="TextInserted" handler="OnEntry2TextInserted" />
           </widget>
           <packing>
             <property name="TopAttach">1</property>
