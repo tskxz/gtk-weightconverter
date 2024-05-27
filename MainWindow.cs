@@ -13,4 +13,39 @@ public partial class MainWindow : Gtk.Window
         Application.Quit();
         a.RetVal = true;
     }
+
+    // Convert button
+    protected void OnButton3Clicked(object sender, EventArgs e)
+    {
+        Console.WriteLine("Clicked button");
+    }
+
+    // Get input text
+    protected void OnEntry2TextInserted(object o, TextInsertedArgs args)
+    {
+
+        // Convert string to integer
+        float i;
+        bool success = float.TryParse(entry2.Text, out i);
+
+        // Check if its really an integer
+        if (success)
+        {
+            Console.WriteLine(i);
+            if(combobox1.ActiveText == "KG")
+            {
+                Console.WriteLine("KGS Selected");
+            }
+            float kg_to_lbs = (float)(i * 2.204);
+            Console.WriteLine("To pounds: " + kg_to_lbs);
+
+            // Convert integer to string and display it in label
+            label1.Text = kg_to_lbs.ToString();
+
+        }
+        else
+        {
+            Console.WriteLine("Invalid.");
+        }
+    }
 }

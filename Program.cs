@@ -10,13 +10,7 @@ namespace Weightconv
             Application.Init();
             MainWindow win = new MainWindow();
 
-            // Label
-            Label label_lbs = new Label();
-            label_lbs.Text = "LBS";
-
-            win.Add(label_lbs);
-
-            win.ShowAll();
+            win.Show();
             Application.Run();
         }
     }
