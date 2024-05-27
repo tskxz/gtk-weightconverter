@@ -32,16 +32,23 @@ public partial class MainWindow : Gtk.Window
         if (success)
         {
             Console.WriteLine(i);
-            if(combobox1.ActiveText == "KG")
+            // User wants to convert to KG
+            if (combobox1.ActiveText == "KG")
             {
-                Console.WriteLine("KGS Selected");
+                Console.WriteLine("KG Selected");
+                label2.Text = "LBS";
+
+                float lbs_to_kg = (float)(i * 0.453);
+                Console.WriteLine("To KG: " + lbs_to_kg);
+
+                // Convert integer to string and display it in label
+                label1.Text = lbs_to_kg.ToString() + " KG";
+            } else if (combobox1.ActiveText == "LBS")
+            {
+                label2.Text = "KG";
+                float kg_to_lbs = (float)(i * 2.204);
+                label1.Text = kg_to_lbs.ToString() + " LBS";
             }
-            float kg_to_lbs = (float)(i * 2.204);
-            Console.WriteLine("To pounds: " + kg_to_lbs);
-
-            // Convert integer to string and display it in label
-            label1.Text = kg_to_lbs.ToString();
-
         }
         else
         {
