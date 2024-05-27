@@ -25,13 +25,16 @@ public partial class MainWindow : Gtk.Window
     {
 
         // Convert string to integer
-        int i;
-        bool success = int.TryParse(entry2.Text, out i);
+        float i;
+        bool success = float.TryParse(entry2.Text, out i);
 
         // Check if its really an integer
         if (success)
         {
-            Console.WriteLine(entry2.Text);
+            Console.WriteLine(i);
+            float kg_to_lbs = (float)(i * 2.204);
+            Console.WriteLine("To pounds: " + kg_to_lbs);
+
         }
         else
         {
