@@ -20,8 +20,9 @@ public partial class MainWindow : Gtk.Window
         Console.WriteLine("Clicked button");
     }
 
+    // Get input text
     protected void OnEntry2TextInserted(object o, TextInsertedArgs args)
     {
-        Console.WriteLine("Text is inserted");
+        Console.WriteLine(entry2.Text);
     }
 }
