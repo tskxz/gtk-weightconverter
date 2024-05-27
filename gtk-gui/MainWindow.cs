@@ -7,7 +7,7 @@ public partial class MainWindow
 
 	private global::Gtk.Button button3;
 
-	private global::Gtk.ComboBoxEntry comboboxentry1;
+	private global::Gtk.ComboBox combobox1;
 
 	private global::Gtk.Entry entry2;
 
@@ -38,10 +38,14 @@ public partial class MainWindow
 		w1.XOptions = ((global::Gtk.AttachOptions)(4));
 		w1.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child table1.Gtk.Table+TableChild
-		this.comboboxentry1 = global::Gtk.ComboBoxEntry.NewText();
-		this.comboboxentry1.Name = "comboboxentry1";
-		this.table1.Add(this.comboboxentry1);
-		global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1[this.comboboxentry1]));
+		this.combobox1 = global::Gtk.ComboBox.NewText();
+		this.combobox1.AppendText(global::Mono.Unix.Catalog.GetString("KG"));
+		this.combobox1.AppendText(global::Mono.Unix.Catalog.GetString("LBS"));
+		this.combobox1.CanDefault = true;
+		this.combobox1.Name = "combobox1";
+		this.combobox1.Active = 0;
+		this.table1.Add(this.combobox1);
+		global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1[this.combobox1]));
 		w2.TopAttach = ((uint)(1));
 		w2.BottomAttach = ((uint)(2));
 		w2.LeftAttach = ((uint)(1));
@@ -67,7 +71,9 @@ public partial class MainWindow
 		}
 		this.DefaultWidth = 400;
 		this.DefaultHeight = 300;
+		this.combobox1.HasDefault = true;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+		this.button3.Clicked += new global::System.EventHandler(this.OnButton3Clicked);
 	}
 }

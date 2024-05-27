@@ -13,4 +13,10 @@ public partial class MainWindow : Gtk.Window
         Application.Quit();
         a.RetVal = true;
     }
+
+    // Convert button
+    protected void OnButton3Clicked(object sender, EventArgs e)
+    {
+        Application.Quit();
+    }
 }
