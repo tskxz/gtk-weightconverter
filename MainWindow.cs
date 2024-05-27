@@ -35,6 +35,9 @@ public partial class MainWindow : Gtk.Window
             float kg_to_lbs = (float)(i * 2.204);
             Console.WriteLine("To pounds: " + kg_to_lbs);
 
+            // Convert integer to string and display it in label
+            label1.Text = kg_to_lbs.ToString();
+
         }
         else
         {
