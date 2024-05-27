@@ -32,6 +32,10 @@ public partial class MainWindow : Gtk.Window
         if (success)
         {
             Console.WriteLine(i);
+            if(combobox1.ActiveText == "KG")
+            {
+                Console.WriteLine("KGS Selected");
+            }
             float kg_to_lbs = (float)(i * 2.204);
             Console.WriteLine("To pounds: " + kg_to_lbs);
 
