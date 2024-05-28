@@ -6,7 +6,7 @@
   <import>
     <widget-library name="../bin/Debug/Weightconv.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="386 146">
+  <widget class="Gtk.Window" id="MainWindow" design-size="218 146">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Weightconv</property>
     <property name="WindowPosition">CenterOnParent</property>
