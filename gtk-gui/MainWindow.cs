@@ -22,6 +22,7 @@ public partial class MainWindow
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.table1 = new global::Gtk.Table(((uint)(4)), ((uint)(3)), false);
+		this.table1.Name = "table1";
 		this.table1.RowSpacing = ((uint)(6));
 		this.table1.ColumnSpacing = ((uint)(6));
 		// Container child table1.Gtk.Table+TableChild
@@ -81,7 +82,7 @@ public partial class MainWindow
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 386;
+		this.DefaultWidth = 218;
 		this.DefaultHeight = 146;
 		this.combobox1.HasDefault = true;
 		this.Show();
